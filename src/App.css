@@ -1,38 +1,85 @@
-.App {
-  text-align: center;
+/* App.css - Estilos específicos para componentes de la aplicación */
+
+/* Estilos para las diferentes áreas de la aplicación */
+.bg-black {
+  background-color: #000;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.bg-gray-900 {
+  background-color: #111827;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.bg-gray-800 {
+  background-color: #1f2937;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.bg-gray-700 {
+  background-color: #374151;
 }
 
-.App-link {
-  color: #61dafb;
+.bg-purple-600 {
+  background-color: #7c3aed;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+.bg-purple-500 {
+  background-color: #8b5cf6;
+}
+
+.bg-red-500 {
+  background-color: #ef4444;
+}
+
+.text-white {
+  color: #ffffff;
+}
+
+.text-gray-400 {
+  color: #9ca3af;
+}
+
+.text-gray-300 {
+  color: #d1d5db;
+}
+
+.text-purple-400 {
+  color: #a78bfa;
+}
+
+.text-purple-300 {
+  color: #c4b5fd;
+}
+
+.text-yellow-400 {
+  color: #fbbf24;
+}
+
+/* Animaciones y transiciones */
+.hover\:bg-purple-700:hover {
+  background-color: #6d28d9;
+}
+
+.hover\:bg-gray-800:hover {
+  background-color: #1f2937;
+}
+
+.focus\:outline-none:focus {
+  outline: none;
+}
+
+.focus\:ring-2:focus {
+  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
+}
+
+.focus\:ring-purple-500:focus {
+  --tw-ring-color: #8b5cf6;
+}
+
+/* Responsive helpers */
+@media (min-width: 768px) {
+  .md\:px-6 {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
   }
 }
