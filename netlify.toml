@@ -1,0 +1,9 @@
+[build]
+  command = "npm run build"
+  publish = "build"
+
+# Esta regla redirige todas las rutas no encontradas a index.html para SPAs
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
